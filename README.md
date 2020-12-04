@@ -6,7 +6,8 @@ Repo for web-scrapping and data analysis for ESPN/NFL stats
 - Extracted various tables while also transferring data-frames to Excel worksheets for analysis. 
 - Specialized SQL Queries are also integrated into this Python program to retrieve unique and customized NFL statistics from Excel.
 - Produced data visualizations using Matplotlib python library.
-###*Code executed after NFL sunday, MNF, TNF*
+
+### *Code executed after NFL sunday, MNF, TNF*
 
   - **[x] Current QB stats**
   - **[x] QB negatives (Sacks/Interceptions)**
@@ -40,4 +41,4 @@ Repo for web-scrapping and data analysis for ESPN/NFL stats
 ##### All sub tables and scrapped data is stored into data structures and loaded into output excel sheet with multiple sheets for storage and easier readibility, along with future SQL queries. Original scrapped tables are also loaded into seperate excel file and used as reference/database for SQL/Python program.
 
 # Data Visualization and Tables:
-![Top 10 QB rankings scraped from source](top10_QB.JPG)
+![](top10_QB.JPG)
