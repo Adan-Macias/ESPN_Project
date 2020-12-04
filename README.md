@@ -19,22 +19,12 @@ Repo for web-scrapping and data analysis for ESPN/NFL stats
   
  # Web Scrapping Process:
   - Data structures utilized to manually scrape target HTML tables.
-  - QB attributes
-    - QBName 
-    - POS	
-    - GP	
-    - CMP	
-    - ATT	
-    - CMP%	
-    - YDS	
-    - AVG	
-    - YDS/G	
-    - LNG	
-    - TD	
-    - INT	
-    - SACK	
-    - SYL	
-    - QBR	
-    - RTG
+  - QB attributes scrapped from passing tables
+    - **QBName	POS|GP|CMP|ATT|CMP%|YDS|AVG|YDS/G|LNG|TD|INT|SACK|SYL|QBR|RTG**
+  - Injury attrbutes scrapped from injury tables
+    - **Name|POS|DATE|COMMENTS**
+  - Standing attributes scrapped from standings tables
+    - **Teams|W|L|T|PCT|HOME|AWAY|DIV|CONF|PF|PA|DIFF|STRK**
+   
 
  
