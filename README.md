@@ -39,5 +39,5 @@ Repo for web-scrapping and data analysis for ESPN/NFL stats
 # Excel and Dataframes:
 ##### All sub tables and scrapped data is stored into data structures and loaded into output excel sheet with multiple sheets for storage and easier readibility, along with future SQL queries. Original scrapped tables are also loaded into seperate excel file and used as reference/database for SQL/Python program.
 
-  
- 
+# Data Visualization and Tables:
+![alt text](image.jpg)
