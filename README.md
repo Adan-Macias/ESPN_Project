@@ -42,3 +42,4 @@ Repo for web-scrapping and data analysis for ESPN/NFL stats
 
 # Data Visualization and Tables:
 ![](top10_QB.JPG)
+![](top10_standings.JPG)
