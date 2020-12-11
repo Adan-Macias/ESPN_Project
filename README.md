@@ -1,4 +1,4 @@
-# ESPN NFL data Analysis
+# ESPN NFL Data Analysis
 Repo for web-scrapping and data analysis for ESPN/NFL stats
 
 
@@ -45,5 +45,5 @@ Repo for web-scrapping and data analysis for ESPN/NFL stats
 ![](top10_standings.JPG)
 ![](top10_QB.JPG)
 ## Demonstration of data visuals by comparing touchdowns and sacks
-![](TD.JPG)
+![](Data Visulizations/QBR-CMP.png)
 ![](sacks.JPG)
