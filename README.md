@@ -45,5 +45,7 @@ Repo for web-scrapping and data analysis for ESPN/NFL stats
 ![](top10_standings.JPG)
 ![](top10_QB.JPG)
 ## Demonstration of data visuals by comparing touchdowns and sacks
-![](./Data Visulizations/TD_Per_QB.png)
-![](sacks.JPG)
+![](https://raw.githubusercontent.com/Adans-Code/espn_nfl_stats/main/Data%20Visulizations/TD_Per_QB.png)
+![](https://raw.githubusercontent.com/Adans-Code/espn_nfl_stats/main/Data%20Visulizations/sacks.png)
+![](https://raw.githubusercontent.com/Adans-Code/espn_nfl_stats/main/Data%20Visulizations/QBR-CMP.png)
+![](https://raw.githubusercontent.com/Adans-Code/espn_nfl_stats/main/Data%20Visulizations/TD-INT.png)
