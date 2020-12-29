@@ -1,11 +1,11 @@
 # ESPN NFL Data Analysis
-Repo for web-scrapping and data analysis for ESPN/NFL stats
+Repo for Webscrapping and Data Analysis for ESPN/NFL stats
 
 
-- Web-scraping(Python Beautiful Soup Package) program to parse HTML structures.
-- Extracted various tables while also transferring data-frames to Excel worksheets for analysis. 
+- Webscraping(Python Beautiful Soup Package) program to parse HTML structures.
+- Extracted various tables while also transferring DataFrames to Excel worksheets for analysis. 
 - Specialized SQL Queries are also integrated into this Python program to retrieve unique and customized NFL statistics from Excel.
-- Produced data visualizations using Matplotlib python library.
+- Produced Data visualizations using Matplotlib python library.
 
 ### *Code executed after NFL sunday, MNF, TNF*
 
