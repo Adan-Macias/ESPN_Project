@@ -28,20 +28,25 @@ Repo for web-scrapping and data analysis for ESPN/NFL stats
   - Standing attributes scrapped from standings tables
     - **Teams|W|L|T|PCT|HOME|AWAY|DIV|CONF|PF|PA|DIFF|STRK**
    
- # SQL Queries:
+ # SQL Queries: 
  #### Multiple sub tables were generated from scrapped website data using queries
- #### Spreadsheets/Sub Tables:
-  - Current stats 
-  - Current Standings
-  - Negatives
-  - NFL worst
-  - Injuries
+  - Query results packed into seperate DataFrames and dumped into Excel files.
+  - Built-In Python sqlite3 For Fast Temporary Data Filtering/Extraction
   
-# Excel and Dataframes:
-##### All sub tables and scrapped data is stored into data structures and loaded into output excel sheet with multiple sheets for storage and easier readibility, along with future SQL queries. Original scrapped tables are also loaded into seperate excel file and used as reference/database for SQL/Python program.
+# Excel and Dataframes:Data Storage/Results
+  - **NFL_Stats.xlsx** contains all scrapped HTML tables from ESPN URL.
+    - **Sheets:** Passing, Standings, Injuries 
+  - **NFL_Query.xlsx** This file contains all SQL Queries from **sql_espn.py**.Sub-Tables generated for in depth filtering or Analysis.
+    - **Sheets:** Current-Stats(Copy of original Data), Negatives,Current-Standings, NFL-Worst, Injuries
 
-## Demonstration of data visuals by comparing touchdowns and sacks
-![](https://raw.githubusercontent.com/Adans-Code/espn_nfl_stats/main/Data%20Visulizations/TD_Per_QB.png)
-![](https://raw.githubusercontent.com/Adans-Code/espn_nfl_stats/main/Data%20Visulizations/sacks.png)
-![](https://raw.githubusercontent.com/Adans-Code/espn_nfl_stats/main/Data%20Visulizations/QBR-CMP.png)
-![](https://raw.githubusercontent.com/Adans-Code/espn_nfl_stats/main/Data%20Visulizations/TD-INT.png)
+# DATA VISUALIZATION: 
+#### *This Process Automatically Saves Data Visuals After Execution*
+## Data Visual #1: Demonstrates Touchdowns completed by each Quarterback, along with Sacks per QB.
+![](https://raw.githubusercontent.com/Adan-Macias/espn_nfl_stats/main/Data_Visuals/TD.png)
+![](https://raw.githubusercontent.com/Adan-Macias/espn_nfl_stats/main/Data_Visuals/sacks.png)
+
+## Data Visual #2: Amount of Touchdowns completed along with Interceptions on stacked Bar chart.
+![](https://raw.githubusercontent.com/Adan-Macias/espn_nfl_stats/main/Data_Visuals/TD-INT.png)
+
+## Data Visual #3: Displays and Compares CMP% and QBR.
+![](https://raw.githubusercontent.com/Adan-Macias/espn_nfl_stats/main/Data_Visuals/QBR-CMP.png)
