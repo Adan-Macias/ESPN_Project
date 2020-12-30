@@ -144,7 +144,7 @@ def transferData():
 
     
     # Loadeing all Data into Dataframes and dumping into excel files/sheets
-    dataToExcel = pd.ExcelWriter("C:/Users/melen/Desktop/python/Automation/NFL_Stats.xlsx", engine='xlsxwriter')
+    dataToExcel = pd.ExcelWriter("YOUR PATH/NFL_Stats.xlsx", engine='xlsxwriter')
     # Passing list of names as index
     data1 = pd.DataFrame(split_pass_stats, index=name)
     # Passing list of headers as columns
@@ -166,6 +166,7 @@ def transferData():
     dataToExcel.save()
 
 def main():
+    # Invoke all Methods
     scrapeEspnPass()
     scrapeEspnStandings()
     scrapeEspnInjuries()
