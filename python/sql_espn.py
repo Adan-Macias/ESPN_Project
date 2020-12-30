@@ -4,9 +4,9 @@ from sqlalchemy import create_engine
 
 
 # INPUT file to query
-file = "/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data/NFL_Stats.xlsx"
+file = "YOUR PATH/NFL_Stats.xlsx"
 # OUTPUT file of desired queries
-output = pd.ExcelWriter("C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data/NFL_Query.xlsx", engine='xlsxwriter')
+output = pd.ExcelWriter("YOUR PATH/NFL_Query.xlsx", engine='xlsxwriter')
 
 # Creating sql engine to use SQL/reading Excel sheets
 engine = create_engine('sqlite://', echo=False)
