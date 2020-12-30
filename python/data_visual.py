@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 
-#input file
-raw_data = pd.read_excel('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data/NFL_Query.xlsx')
+# INPUT
+raw_data = pd.read_excel('YOUR PATH/NFL_Query.xlsx')
 
 # Filters
 filter1 = raw_data[(raw_data.SACK >= 0)]
@@ -24,7 +24,7 @@ plt.xticks(x_ticks)
 plt.tick_params(axis='y', which='major', labelsize=7)
 plt.legend()
 plt.margins(y=0)
-plt.savefig('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data_Visuals/TD.png', bbox_inches='tight')
+plt.savefig('YOUR PATH/TD.png', bbox_inches='tight')
 
 #Data Visual #2
 plt.figure(2, figsize=[11.5,7])
@@ -39,7 +39,7 @@ plt.tick_params(axis='x', which='major', labelsize=7)
 plt.xticks(raw_data.QBName, rotation=90)
 plt.legend()
 plt.margins(x=0)
-plt.savefig('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data_Visuals/sacks.png', bbox_inches='tight')
+plt.savefig('YOUR PATH/sacks.png', bbox_inches='tight')
 
 #Data Visual #3
 plt.figure(3, figsize=[10,5.5])
@@ -62,7 +62,7 @@ plt.yticks(y_ticks)
 plt.tick_params(axis='x', which='major', labelsize=7)
 plt.legend()
 plt.margins(x=0)
-plt.savefig('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data_Visuals/QBR-CMP.png', bbox_inches='tight')
+plt.savefig('YOUR PATH/QBR-CMP.png', bbox_inches='tight')
 
 ##Data Visual #4
 raw_data = raw_data.sort_values(by=['TD','INT'])
@@ -79,7 +79,7 @@ plt.tick_params(axis='x', which='major', labelsize=7)
 plt.xticks(raw_data.QBName, rotation=90)
 plt.legend()
 plt.margins(x=0)
-plt.savefig('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data_Visuals/TD-INT.png', bbox_inches='tight')
+plt.savefig('YOUR PATH/TD-INT.png', bbox_inches='tight')
 
 
 
