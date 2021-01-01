@@ -44,8 +44,8 @@ Repo for Webscrapping and Data Analysis for ESPN/NFL stats
 ## Data Visual #1: Demonstrates Touchdowns completed by each Quarterback, along with Sacks per QB.
 ![](https://raw.githubusercontent.com/Adan-Macias/espn_nfl_stats/main/Data_Visuals/TD-SACK.png)
 
-## Data Visual #2: Amount of Touchdowns completed along with Interceptions on stacked Bar chart.
-![](https://raw.githubusercontent.com/Adan-Macias/espn_nfl_stats/main/Data_Visuals/TD-INT.png)
+## Data Visual #2: Amount of Touchdowns completed along with Interceptions on Bar chart.
+![](https://raw.githubusercontent.com/Adan-Macias/espn_nfl_stats/main/Data_Visuals/TD_INT.png)
 
 ## Data Visual #3: Displays and Compares CMP% and QBR.
 ![](https://raw.githubusercontent.com/Adan-Macias/espn_nfl_stats/main/Data_Visuals/QBR-CMP.png)
