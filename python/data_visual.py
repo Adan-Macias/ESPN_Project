@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 #input file
-raw_data = pd.read_excel('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data/NFL_Query.xlsx')
+raw_data = pd.read_excel('YOUR PATH/NFL_Query.xlsx')
 
 # Filters
 filter1 = raw_data[(raw_data.TD >= 0)]
@@ -22,7 +22,7 @@ plt.tick_params(axis='y', which='major', labelsize=12)
 plt.tick_params(axis='x', which='major', labelsize=12)
 plt.margins(y=0)
 plt.legend(fontsize=12)
-plt.savefig('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data_Visuals/TD-SACK.png', bbox_inches='tight')
+plt.savefig('YOUR PATH/TD-SACK.png', bbox_inches='tight')
 
 #Data Visual #2
 plt.figure(figsize=[10,5.5])
@@ -45,7 +45,7 @@ plt.yticks(y_ticks)
 plt.tick_params(axis='x', which='major', labelsize=7)
 plt.legend()
 plt.margins(x=0)
-plt.savefig('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data_Visuals/QBR-CMP.png', bbox_inches='tight')
+plt.savefig('YOUR PATH/QBR-CMP.png', bbox_inches='tight')
 
 ##Data Visual #3
 plt.rcParams["figure.figsize"] = [20,8]
@@ -60,6 +60,6 @@ plt.tick_params(axis='x', which='major', labelsize=10)
 plt.tick_params(axis='y', which='major', labelsize=10)
 plt.legend(fontsize=12)
 plt.margins(x=0)
-plt.savefig('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data_Visuals/TD_INT.png', bbox_inches='tight')
+plt.savefig('YOUR PATH/TD_INT.png', bbox_inches='tight')
 
 print('------------Data Visuals Created----------')
