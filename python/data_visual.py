@@ -2,47 +2,30 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 
-# INPUT
-raw_data = pd.read_excel('YOUR PATH/NFL_Query.xlsx')
+#input file
+raw_data = pd.read_excel('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data/NFL_Query.xlsx')
 
 # Filters
-filter1 = raw_data[(raw_data.SACK >= 0)]
-filter1 = filter1.sort_values(by=['SACK'])
-
-filter2 = raw_data[(raw_data.TD >= 0)]
-filter2 = filter2.sort_values(by=['TD'])
+filter1 = raw_data[(raw_data.TD >= 0)]
+filter1 = filter1.sort_values(by=['TD'])
 
 #Data Visual #1
-plt.figure(1, figsize=[13,8])
-plt.barh(filter2.QBName,filter2.TD, color='green', height=.8, label='TD')
-plt.grid(color='black', linestyle='--', linewidth=.4, axis='x', alpha=0.7)
-plt.title('Number Of Touchdowns Per (QB)')
-plt.ylabel('Quarterback')
-plt.xlabel('Touchdowns')
+plt.rcParams["figure.figsize"] = [20,22]
+filter1.reset_index().plot(y=['TD', 'SACK'],x='QBName', kind='barh', stacked=False, width=0.7, color=['teal', 'firebrick'])
+plt.grid(color='black', linestyle='--', linewidth=.4, axis='x', alpha=0.8)
+plt.title('Number Of Touchdowns Per (QB)', fontsize=15)
+plt.ylabel('Quarterback', fontsize=14)
+plt.xlabel('Touchdowns', fontsize=14)
 x_ticks = np.arange(0, 60, 2)
 plt.xticks(x_ticks)
-plt.tick_params(axis='y', which='major', labelsize=7)
-plt.legend()
+plt.tick_params(axis='y', which='major', labelsize=12)
+plt.tick_params(axis='x', which='major', labelsize=12)
 plt.margins(y=0)
-plt.savefig('YOUR PATH/TD.png', bbox_inches='tight')
+plt.legend(fontsize=12)
+plt.savefig('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data_Visuals/TD-SACK.png', bbox_inches='tight')
 
 #Data Visual #2
-plt.figure(2, figsize=[11.5,7])
-plt.bar(filter1.QBName,filter1.SACK, color='red', label='Sacks')
-plt.grid(color='black', linestyle='--', linewidth=.4, axis='y', alpha=0.7)
-plt.title('Number Of Sacks Per (QB)')
-plt.ylabel('Sacks')
-plt.xlabel('Quarterback')
-y_ticks = np.arange(0, 60, 2)
-plt.yticks(y_ticks)
-plt.tick_params(axis='x', which='major', labelsize=7)
-plt.xticks(raw_data.QBName, rotation=90)
-plt.legend()
-plt.margins(x=0)
-plt.savefig('YOUR PATH/sacks.png', bbox_inches='tight')
-
-#Data Visual #3
-plt.figure(3, figsize=[10,5.5])
+plt.figure(figsize=[10,5.5])
 plt.title("QB Rating")
 plt.plot(raw_data.QBName, raw_data.QBR, marker='.', markersize='6', color='green',
     markeredgecolor='black', markerfacecolor='black', linewidth='2', label='QBR')
@@ -62,25 +45,21 @@ plt.yticks(y_ticks)
 plt.tick_params(axis='x', which='major', labelsize=7)
 plt.legend()
 plt.margins(x=0)
-plt.savefig('YOUR PATH/QBR-CMP.png', bbox_inches='tight')
+plt.savefig('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data_Visuals/QBR-CMP.png', bbox_inches='tight')
 
-##Data Visual #4
-raw_data = raw_data.sort_values(by=['TD','INT'])
-plt.figure(4, figsize=[10,5.5])
-plt.bar(raw_data.QBName,raw_data.TD, color='blue', label='TD', bottom=raw_data.INT)
-plt.bar(raw_data.QBName,raw_data.INT, color='red', label='INT')
+##Data Visual #3
+plt.rcParams["figure.figsize"] = [20,8]
+filter1.reset_index().plot(y=['TD', 'INT'],x='QBName', kind='bar', stacked=False, width=0.8, color=['blue', 'firebrick'])
 plt.grid(color='black', linestyle='--', linewidth=.4, axis='y', alpha=0.7)
-plt.title('Touchdown vs Interception Comparison')
-plt.ylabel('Touchdowns/Intrceptions')
-plt.xlabel('Quarterback ')
-y_ticks = np.arange(0, 50, 3)
+plt.title('Touchdown vs Interception Comparison',fontsize=15)
+plt.ylabel('Touchdowns/Intrceptions', fontsize=12)
+plt.xlabel('Quarterback ', fontsize=12)
+y_ticks = np.arange(0, 50, 2)
 plt.yticks(y_ticks)
-plt.tick_params(axis='x', which='major', labelsize=7)
-plt.xticks(raw_data.QBName, rotation=90)
-plt.legend()
+plt.tick_params(axis='x', which='major', labelsize=10)
+plt.tick_params(axis='y', which='major', labelsize=10)
+plt.legend(fontsize=12)
 plt.margins(x=0)
-plt.savefig('YOUR PATH/TD-INT.png', bbox_inches='tight')
-
-
+plt.savefig('C:/Users/melen/Desktop/PORTFOLIO/ESPN_Project/Data_Visuals/TD_INT.png', bbox_inches='tight')
 
 print('------------Data Visuals Created----------')
