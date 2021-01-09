@@ -22,7 +22,7 @@ Repo for Webscrapping and Data Analysis for ESPN/NFL stats
  # Web Scrapping Process:
   - Data structures utilized to manually scrape target HTML tables.
   - QB attributes scrapped from passing tables
-    - **QBName|POS|GP|CMP|ATT|CMP%|YDS|AVG|YDS/G|LNG|TD|INT|SACK|SYL|QBR|RTG*
+    - *QBName|POS|GP|CMP|ATT|CMP%|YDS|AVG|YDS/G|LNG|TD|INT|SACK|SYL|QBR|RTG*
   - Injury attrbutes scrapped from injury tables
     - *Name|POS|DATE|COMMENTS*
   - Standing attributes scrapped from standings tables
@@ -31,7 +31,7 @@ Repo for Webscrapping and Data Analysis for ESPN/NFL stats
  # SQL Queries: 
  #### Multiple sub tables were generated from scrapped website data using queries
   - Query results packed into seperate DataFrames and dumped into Excel files.
-  - Built-In Python sqlite3 For Fast Temporary Data Filtering/Extraction
+  - Built-In Python sqlite3 for fast temporary data Filtering/Extraction
   
 # Excel and Dataframes:Data Storage/Results
   - **NFL_Stats.xlsx** contains all scrapped HTML tables from ESPN URL.
@@ -41,7 +41,7 @@ Repo for Webscrapping and Data Analysis for ESPN/NFL stats
 
 # DATA VISUALIZATION: 
 #### *This Process Automatically Saves Data Visuals After Execution*
-## Data Visual #1: Demonstrates Touchdowns completed by each Quarterback, along with Sacks per QB.
+## Data Visual #1: Demonstrates Touchdowns/Sacks completed by each Quarterback
 ![](https://raw.githubusercontent.com/Adan-Macias/espn_nfl_stats/main/Data_Visuals/TD_SACK.png)
 
 ## Data Visual #2: Amount of Touchdowns completed along with Interceptions.
