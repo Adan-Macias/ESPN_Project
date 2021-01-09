@@ -20,7 +20,7 @@ Repo for Webscrapping and Data Analysis for ESPN/NFL stats
  #### Packages: pandas, BeautifulSoup, matplotlib
   
  # Web Scrapping Process:
-  - Data structures utilized to manually scrape target HTML tables.
+ ## Data structures utilized to manually scrape target HTML tables.
   - QB attributes scrapped from passing tables
     - *QBName|POS|GP|CMP|ATT|CMP%|YDS|AVG|YDS/G|LNG|TD|INT|SACK|SYL|QBR|RTG*
   - Injury attrbutes scrapped from injury tables
