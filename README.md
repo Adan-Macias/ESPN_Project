@@ -1,6 +1,4 @@
-# ESPN NFL Data Analysis
-Repo for Webscrapping and Data Analysis for ESPN/NFL stats
-
+# ESPN NFL Data Analysis (2020 Season)
 
 - Webscraping(Python Beautiful Soup Package) program to parse HTML structures.
 - Extracted various tables while also transferring DataFrames to Excel worksheets for analysis. 
